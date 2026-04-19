@@ -31,9 +31,18 @@ wget https://nodejs.org/dist/v6.11.5/node-v6.11.5-linux-x64.tar.xz
 tar -xf node-v6.11.5-linux-x64.tar.xz
 rm -rf node-v6.11.5-linux-x64.tar.xz
 mv node-v6.11.5-linux-x64 node
-
-ls node/bin
 # Output: node  npm  npx
+--2026-04-19 20:10:38--  https://nodejs.org/dist/v6.11.5/node-v6.11.5-linux-x64.tar.xz
+Resolving nodejs.org (nodejs.org)... 104.16.213.131, 104.16.212.131, 2606:4700::6810:d583, ...
+Connecting to nodejs.org (nodejs.org)|104.16.213.131|:443... connected.
+HTTP request sent, awaiting response... 200 OK
+Length: 9356460 (8.9M) [application/x-xz]
+Saving to: ‘node-v6.11.5-linux-x64.tar.xz’
+
+node-v6.11.5-linux- 100%[===================>]   8.92M  2.34MB/s    in 4.0s    
+
+2026-04-19 20:10:43 (2.25 MB/s) - ‘node-v6.11.5-linux-x64.tar.xz’ saved [9356460/9356460]
+
 
 export PATH=${PATH}:`pwd`/node/bin
 echo ${PATH}
